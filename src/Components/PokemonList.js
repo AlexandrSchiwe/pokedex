@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import PokemonCard from './PokemonCard';
+import { useState } from 'react';
 import Axios from 'axios';
 
 const PokemonList = () => {
