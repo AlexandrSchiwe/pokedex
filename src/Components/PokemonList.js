@@ -38,7 +38,7 @@ const PokemonList = () => {
         <div className="render">
             <p>{showData.name.charAt().toUpperCase() + showData.name.slice(1)}</p>
             <img src={showData.img} alt="" />
-            <p>{showData.id}</p>
+            <p>{showData.id + "#"}</p>
         </div>
     </section>);
 }
