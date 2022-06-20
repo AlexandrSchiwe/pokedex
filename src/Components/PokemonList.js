@@ -7,6 +7,7 @@ const PokemonList = () => {
 
     const [showData, setShowData] = useState({
         name: "",
+        id: "",
     });
 
     const searchPokemon = () => {
@@ -14,6 +15,7 @@ const PokemonList = () => {
             console.log(response.data);
             setShowData({
                 name: pokemon,
+                id: response.data.id,
                 img: response.data.sprites.other.dream_world.front_default,
             });
         })
@@ -30,11 +32,14 @@ const PokemonList = () => {
 
     // console.log(pokemon);
 
-    return (<section>
+    return (<section className="renderContainer">
         <input type="text" name="" id="" onChange={(event) => setPokemon(event.target.value)} />
         <button onClick={searchPokemon}>Search</button>
-        <p>{showData.name}</p>
-        <img src={showData.img} alt="" />
+        <div className="render">
+            <p>{showData.name.charAt().toUpperCase() + showData.name.slice(1)}</p>
+            <img src={showData.img} alt="" />
+            <p>{showData.id}</p>
+        </div>
     </section>);
 }
 

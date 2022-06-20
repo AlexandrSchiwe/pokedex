@@ -1,0 +1,19 @@
+body {
+    background-image: url("./images/victini-hd-iphone-12-pro-max.jpeg");
+    background-repeat: no-repeat;
+    background-position: 1000% 0%;
+    background-size: cover;
+}
+
+.render {
+    width: 350px;
+    height: 350px;
+    background: white;
+    text-align: center;
+    margin: 35vh auto 0 auto;
+}
+
+.render img {
+    width: 50%;
+    padding-top: 20px;
+}
